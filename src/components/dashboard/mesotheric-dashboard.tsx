@@ -289,7 +289,7 @@ async function handleSaveDailyPlan() {
             key={`${milestone}-${index}`}
             className="rounded-2xl border border-stone-800 bg-stone-950/70 p-4"
           >
-            <p className="text-xs uppercase tracking-[0.2em] text-primary">
+            <p className="text-xs uppercase tracking-[0.2em] text-amber-300">
               Milestone {index + 1}
             </p>
             <p className="mt-2 text-sm leading-6 text-stone-300">
@@ -314,7 +314,7 @@ async function handleSaveDailyPlan() {
       <p className="text-xs uppercase tracking-[0.2em] text-muted-text/80">
         Notes
       </p>
-      <p className="mt-2 text-sm leading-6 text-foreground/85">
+      <p className="mt-2 text-sm leading-6 ">
         {dailyPlan.notes}
       </p>
     </div>
@@ -476,7 +476,7 @@ async function handleSaveDailyPlan() {
 <textarea
   value={mindDumpContent}
   onChange={(event) => setMindDumpContent(event.target.value)}
-  className="mt-5 min-h-48 w-full resize-none rounded-2xl border border-stone-800 bg-stone-950 p-4 text-sm text-foreground outline-none placeholder:text-stone-600 focus:border-amber-400"
+  className="mt-5 min-h-48 w-full resize-none rounded-2xl border border-stone-800 bg-stone-950 p-4 text-sm text-stone-100 outline-none placeholder:text-stone-600 focus:border-amber-400"
   placeholder="Write whatever is moving through your mind..."
 />
 
@@ -518,7 +518,7 @@ async function handleSaveDailyPlan() {
             </p>
 
             <div className="mt-8 border-t border-stone-800 pt-6">
-              <p className="text-sm uppercase tracking-[0.25em] text-primary">
+              <p className="text-sm uppercase tracking-[0.25em] text-amber-400">
                 Today’s Logs
               </p>
 
