@@ -7,13 +7,15 @@ export const metadata: Metadata = {
   title: "Mesotheric",
   description:
     "The middle path between shadow and light. A Hermetic-inspired habit transformation app.",
+  manifest: "/manifest.json",
+  themeColor: "#0f0f0f",
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body>
